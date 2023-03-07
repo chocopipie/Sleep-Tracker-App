@@ -1,0 +1,47 @@
+<ion-content class="ion-padding">
+  <ion-label>Hello there,</ion-label>
+  <p>Right now, I feel:</p>
+  <ion-grid class="sleepiness-grid">
+    <ion-row class="ion-text-center">
+      <ion-col *ngFor="let option of sleepinessOpions; let indexOfelement=index;" size="6" >
+        <ion-button expand="full" class="ion-text-wrap" expand="block" shape="round" [color]="activeIndex===indexOfelement+1 ? 'light': ''" (click)="createSleepiness(indexOfelement+1)">{{option}}</ion-button>
+      </ion-col>
+      <!--<ion-col size="6" ><ion-button expand="full" class="ion-text-wrap" expand="block" shape="round" (click)="createSleepiness(1)">Feeling active, vital, alert, or wide awake</ion-button></ion-col>
+      <ion-col size="6"><ion-button expand="full" class="ion-text-wrap" expand="block" shape="round" (click)="createSleepiness(2)">Functioning at high levels, but not at peak</ion-button></ion-col>
+      <ion-col size="6"><ion-button expand="full" class="ion-text-wrap" expand="block" shape="round" (click)="createSleepiness(3)">Awake, but relaxed; not fully alert</ion-button></ion-col>
+      <ion-col size="6"><ion-button expand="full" class="ion-text-wrap" expand="block" shape="round" (click)="createSleepiness(4)">Somewhat foggy, let down</ion-button></ion-col>
+      <ion-col size="6"><ion-button expand="full" class="ion-text-wrap" expand="block" shape="round"  (click)="createSleepiness(5)">Foggy; losing interest in remaining awake</ion-button></ion-col>
+      <ion-col size="6"><ion-button expand="full" class="ion-text-wrap" expand="block" shape="round" (click)="createSleepiness(6)">Sleepy, woozy, fighting sleep</ion-button></ion-col>
+      <ion-col size="12"><ion-button expand="full" class="ion-text-wrap" expand="block" shape="round" (click)="createSleepiness(7)">No longer fighting sleep, sleep onset soon</ion-button></ion-col>-->
+    </ion-row>
+  </ion-grid>
+  <div class="ion-text-center">
+    <ion-button class="save-button" fill="outline" shape="round" (click)="saveSleepiness()">SAVE</ion-button>
+  </div>
+</ion-content>
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+      <ion-row text-center>
+        <ion-col size="4.5">
+          <ion-button shape="circle" fill="clear">
+            <ion-img src="../assets/icon/home.png"></ion-img>
+          </ion-button>
+        </ion-col>
+        <ion-col size="3.5">
+          <ion-fab-button class="menu-button" (click)="goToAddSleep()">
+            <ion-icon name="add"></ion-icon>
+          </ion-fab-button>
+        </ion-col>
+        <ion-col size="3">
+          <ion-button shape="circle" fill="clear" (click)="goToSleeps()">
+            <ion-img src="../assets/icon/sleeping.png"></ion-img>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>
+
+
+

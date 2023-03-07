@@ -1,0 +1,47 @@
+ion-content {
+    --background: hsla(22, 12%, 82%, 1);
+    --background: linear-gradient(90deg, hsla(22, 12%, 82%, 1) 0%, hsla(18, 23%, 74%, 1) 48%, hsla(341, 18%, 58%, 1) 100%);
+    --background: -moz-linear-gradient(90deg, hsla(22, 12%, 82%, 1) 0%, hsla(18, 23%, 74%, 1) 48%, hsla(341, 18%, 58%, 1) 100%);
+    --background: -webkit-linear-gradient(90deg, hsla(22, 12%, 82%, 1) 0%, hsla(18, 23%, 74%, 1) 48%, hsla(341, 18%, 58%, 1) 100%);
+}
+
+ion-back-button {
+    color: black;
+}
+
+ion-button[shape=circle] {
+    --background: #706677;
+    --background-hover: #b5838d;
+    --background-activated: #b5838d;
+    --border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+ion-button[shape=circle2] {
+    --background: #a6808c;
+    --background-hover: #e5989b;
+    --background-activated: #e5989b;
+    --border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.timeclock {
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.stop {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}

@@ -1,0 +1,14 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back-outline">
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title slot="start">My Sleep Tracker</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+ <app-sleep-card *ngFor="let sleep of overnightSleepArray" [overnightSleep]="sleep"></app-sleep-card> 
+ <!--<ion-text *ngFor="let sleep of overnightSleepArray">{{sleep.sleepStart}}</ion-text> -->
+</ion-content>

@@ -1,0 +1,21 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-subtitle>{{overnightSleep.dateString()}}</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-item>
+      <ion-button shape="circle" fill="clear">
+        <ion-img src="../assets/icon/sleeptime.png"></ion-img>
+      </ion-button>
+      <ion-label>From {{overnightSleep.getStartTime()}}</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-button shape="circle" fill="clear">
+        <ion-img src="../assets/icon/waketime.png"></ion-img>
+      </ion-button>
+      <ion-label>To {{overnightSleep.getEndTime()}}</ion-label>
+    </ion-item>
+    <ion-button class="detail-button" (click)="goToSleepReport()">View Details</ion-button>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,42 @@
+ion-content {
+    --padding-top: 50px;
+    --background: #eee2df;
+}
+
+
+.menu-button {
+    --background: #e2a66f;
+    --background-hover: #f2cc8f;
+    --background-activated: #f2cc8f;
+}
+
+ion-button[shape=circle] {
+    --border-radius: 50%;
+    width: 70px;
+    height: 70px;
+}
+
+ion-grid {  
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.sleepiness-grid {
+    ion-button {
+        --background: #e2a66f;
+        --border-radius: 10px;
+        --background-hover: #f2cc8f;
+        width: 105px;
+        height: 110px;
+        margin: 0px;
+        font-weight: smaller;
+        text-transform: lowercase;
+    }
+}
+
+.save-button {
+    --border-color: #6d6875;
+    color: #6d6875;
+}

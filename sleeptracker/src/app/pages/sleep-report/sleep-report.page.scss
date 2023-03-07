@@ -1,0 +1,10 @@
+ion-content {
+    --padding-top: 50px;
+    --background: #eee2df;
+}
+
+ion-button[shape=circle] {
+    --border-radius: 50%;
+    width: 80px;
+    height: 40px;
+}

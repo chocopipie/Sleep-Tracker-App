@@ -1,0 +1,27 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button icon="chevron-back-outline">
+      </ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <div class="col ion-text-center">
+      <div class="row timeclock">
+        <p>{{time}}</p>
+      </div>
+      <div class="row" *ngIf="notStart" (click)="startClock()">
+        <ion-button class="ion-text-wrap" shape="circle">BEGIN TO SLEEP</ion-button>
+      </div>
+      <div class="row stop" *ngIf="sleeping" (click)="endClock()">
+        <p>Press to Stop</p>
+        <ion-button shape="circle2">
+          <ion-icon name="stop-outline"></ion-icon>
+        </ion-button>
+      </div>
+    </div>
+  </div>
+</ion-content>
