@@ -32,8 +32,16 @@ I did it myself
 
 
 5. Is there anything special we need to know in order to run your code?
-No
-
+Requirements to run: 
+- Install node
+- Install ionic globally:  npm install -g @ionic/cli (recommended: npm install -g @ionic/lab)
+- Install angular globally: npm install -g @angular/cli 
+- cd sleeptracker: npm install
+- Create firebase project and firestore db, add the configure into sleeptracker/src/environments/environment.ts
+Run:
+- cd sleeptracker
+- ionic serve // localhost:8100
+or ionic serve -l // localhost:8200
 
 --Aim for no more than two sentences for each of the following questions.--
 
